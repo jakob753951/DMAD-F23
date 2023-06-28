@@ -13,4 +13,6 @@ while queue:
     queue.extend([n for n in adjacent_nodes if n not in visited_nodes])
     queue = list(OrderedDict.fromkeys(queue))
 
+print()
+print('We have visited the following nodes in this order:')
 print(visited_nodes)
