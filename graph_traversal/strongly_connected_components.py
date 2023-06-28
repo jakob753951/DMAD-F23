@@ -62,11 +62,12 @@ if (__name__ == "__main__"):
 	h = Vertex('h')
 	i = Vertex('i')
 
+	# for nodes with no neighbors, comment out its line below
 	a.neighbors = {e, d, g}
 	b.neighbors = {c}
 	c.neighbors = {b}
 	d.neighbors = {e}
-	e.neighbors = set()
+	# e.neighbors = {}
 	f.neighbors = {c, b, g}
 	g.neighbors = {d, h, i, b}
 	h.neighbors = {d, f, g}
